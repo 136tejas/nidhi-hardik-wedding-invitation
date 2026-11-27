@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="gu"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nidhi ♥ Hardik – Wedding Invitation</title>
+<title>Nidhi &amp; Hardik – Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Nidhi &amp; Hardik · 2nd February 2027 · The Leonia Heritage, Dhari. Tap to open your invitation.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nidhi &amp; Hardik – Wedding Invitation">
+<meta property="og:description" content="You are warmly invited to our wedding · 2nd February 2027 · The Leonia Heritage, Dhari. Tap to open your invitation.">
+<meta property="og:url" content="https://136tejas.github.io/nidhi-hardik-wedding-invitation/">
+<meta property="og:image" content="https://136tejas.github.io/nidhi-hardik-wedding-invitation/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Amita:wght@400;700&family=Montserrat:wght@300;400;600&family=Noto+Serif+Gujarati:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -170,7 +179,7 @@ input:focus{border-color:var(--teal)}
  <section class="sec" data-w="Date">
   <h2 class="rv">Save the Date</h2><p class="sub rv gu">તારીખ નોંધી લો</p>
   <div class="stage rv" id="stage">
-   <div class="disc"><div class="med">ૐ</div><span class="gu" style="font-weight:700;color:var(--gold)">મંગળવાર · Tuesday</span><b class="d">02</b><span style="font:400 20px 'Yeseva One';color:var(--main)">February 2027</span><span style="font-size:11px">હસ્તમેળાપ · 7:20 PM</span><span style="font-size:10px;max-width:190px">The Leonia Heritage, Dhari</span></div>
+   <div class="disc"><div class="med">ૐ</div><span class="gu" style="font-weight:700;color:var(--gold)">મંગળવાર · Tuesday</span><b class="d">02</b><span style="font:400 20px 'Yeseva One';color:var(--main)">February 2027</span><span style="font-size:11px">હસ્તમેળાપ · 7:30 PM</span><span style="font-size:10px;max-width:190px">The Leonia Heritage, Dhari</span></div>
    <div class="dial" id="dial"><svg id="dsv" viewBox="-150 -150 300 300"></svg></div>
    <div class="ptr"></div><div id="dots"></div>
    <div class="hint" id="hint"><b>👆</b></div>
@@ -197,7 +206,7 @@ input:focus{border-color:var(--teal)}
    <p style="font-size:12px;line-height:1.8">Two hearts, two families,<br>one joyful evening of blessings.</p>
    <p class="gu" style="margin:6px 0 14px;font-size:13px">બે હૈયાં, બે પરિવાર,<br>આશીર્વાદ અને આનંદની એક સાંજ.</p>
    <p style="font:400 19px 'Yeseva One';color:var(--lg)">Tuesday, 2nd February 2027</p>
-   <p style="font-size:12px;margin-top:4px">હસ્તમેળાપ · 7:20 PM</p><p style="font-size:12px">The Leonia Heritage</p>
+   <p style="font-size:12px;margin-top:4px">હસ્તમેળાપ · 7:30 PM</p><p style="font-size:12px">The Leonia Heritage</p>
   </div>
  </section>
 
@@ -300,7 +309,7 @@ function buildPage(){
  carousel($('#c3'),ST.map(s=>{const d=E('div','it');d.innerHTML=`<div class="ph"><img src="${IM[s[0]]}" alt="" style="object-position:${s[0]=='i1'?'45%':'50%'} 30%"><p><b>${s[1]}</b><span class="gu">${s[2]}</span></p></div>`;return d}),true,$('#d3'));
  $('#bl1').src=FI[0];$('#bl2').src=FI[1];
  $('#map').href=MAP;$('#dir').href=MAP;
- $('#cal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Nidhi & Hardik – Hastmelap')+'&dates=20270202T135000Z/20270202T153000Z&location='+encodeURIComponent(ADDR)+'&details='+encodeURIComponent('Wedding of Nidhi & Hardik. Tank & Vaghela families.');
+ $('#cal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Nidhi & Hardik – Hastmelap')+'&dates=20270202T140000Z/20270202T153000Z&location='+encodeURIComponent(ADDR)+'&details='+encodeURIComponent('Wedding of Nidhi & Hardik. Tank & Vaghela families.');
  $('#cp').onclick=async e=>{try{await navigator.clipboard.writeText(ADDR)}catch(_){const t=E('textarea');t.value=ADDR;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}e.target.textContent='Copied ✓';setTimeout(()=>e.target.textContent='Copy address',1800)};
  document.querySelectorAll('.ch .btn').forEach(b=>b.onclick=()=>{const nm=$('#nm').value.trim();if(!nm){$('#rs').textContent='Please enter your name · કૃપા કરી નામ લખો';$('#nm').focus();return}
   document.querySelectorAll('.ch .btn').forEach(x=>x.classList.toggle('sel',x==b));const a=b.dataset.v=='a';$('#rs').innerHTML=a?`Thank you, ${nm.replace(/</g,'&lt;')}! We can’t wait to celebrate with you.<br><span class="gu">આભાર! આપની રાહ જોઈશું.</span>`:`We’ll miss you, ${nm.replace(/</g,'&lt;')}. You’ll be in our hearts.<br><span class="gu">આપને યાદ કરીશું.</span>`;if(a)add(40,'f',W/2,H*.6,1)});
@@ -335,7 +344,7 @@ function setupSpin(){const st=$('#stage'),dial=$('#dial'),dots=$('#dots');for(le
  st.addEventListener('pointermove',e=>{if(la==null||done)return;const a=ang(e);let d=a-la;if(d>180)d-=360;if(d<-180)d+=360;la=a;rot+=d;tot+=Math.abs(d);moved+=Math.abs(d);upd()});
  const end=()=>{if(la==null)return;la=null;if(!done&&moved<8&&Date.now()-t0<350){const s0=tot,r0=rot,T=1500,st0=performance.now();(function f(n){const k=Math.min(1,(n-st0)/T),e=1-Math.pow(1-k,2);tot=s0+(332-s0)*e;rot=r0+(332-s0)*e;upd();if(k<1&&!done)requestAnimationFrame(f)})(st0)}};
  st.addEventListener('pointerup',end);st.addEventListener('pointercancel',()=>la=null);
- const T=new Date('2027-02-02T19:20:00+05:30').getTime(),cd=$('#cd'),p2=n=>String(n).padStart(2,'0');
+ const T=new Date('2027-02-02T19:30:00+05:30').getTime(),cd=$('#cd'),p2=n=>String(n).padStart(2,'0');
  setInterval(()=>{let s=Math.max(0,Math.floor((T-Date.now())/1000));const d=Math.floor(s/86400);s%=86400;cd.innerHTML=`<b>${d}</b> days · <b>${p2(Math.floor(s/3600))}</b> hrs · <b>${p2(Math.floor(s%3600/60))}</b> min · <b>${p2(s%60)}</b> sec`},1000)}
 /* start */
 let started=false,ready=false;
